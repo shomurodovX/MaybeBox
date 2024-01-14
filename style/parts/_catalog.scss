@@ -1,0 +1,17 @@
+.catalog {
+  &_card {
+    border-radius: 12px;
+    background-color: $gray;
+    &-text {
+      h5 {
+        color: $black;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .price {
+        color: $green;
+      }
+    }
+  }
+}
