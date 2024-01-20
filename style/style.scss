@@ -57,6 +57,7 @@ button {
   cursor: pointer;
   background: transparent;
   border: none;
+  font-family: "Cormorant";
 
   &:focus {
     outline: none;
@@ -103,4 +104,5 @@ body {
 @import "./parts/catalog";
 @import "./parts/about";
 @import "./parts/accordion";
+@import "./parts/footer";
 @import "./parts/responsive";
