@@ -1,5 +1,23 @@
+.catalog_cards-wrapper {
+  border: 1px solid red;
+  gap: 20px;
+}
 .catalog {
+  padding-top: 120px;
+  &_title {
+    margin-bottom: 22px;
+    h2 {
+      color: $green;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: normal;
+      border-bottom: 1px solid $green;
+      display: inline-block;
+      padding-bottom: 12px;
+    }
+  }
   &_card {
+    margin: 10px 0;
     border-radius: 12px;
     background-color: $gray;
     &-text {
@@ -13,5 +31,12 @@
         color: $green;
       }
     }
+  }
+
+  &_btn {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

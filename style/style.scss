@@ -66,8 +66,41 @@ button {
 body {
   background-color: $bg_color;
 }
+// default btn
+.title {
+  margin-bottom: 22px;
+  h2 {
+    color: $green;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid $green;
+    display: inline-block;
+    padding-bottom: 12px;
+  }
+}
+.btn {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 40px;
+  font-size: 20px;
+  color: $green;
+  gap: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid $green;
+  border-radius: 100px;
+}
+.btn:hover {
+  border: 1px solid $green;
+}
+
+// title style
 
 @import "./parts/header";
 @import "./parts/home";
 @import "./parts/catalog";
+@import "./parts/about";
+@import "./parts/accordion";
 @import "./parts/responsive";

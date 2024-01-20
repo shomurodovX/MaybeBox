@@ -1,0 +1,47 @@
+.accordion {
+  padding-top: 120px;
+  &_button {
+    user-select: none;
+    height: 72px;
+    padding: 0 24px;
+    justify-content: space-between; // O'zgartirish
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid $black;
+    &-left {
+      span {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $bg_color;
+        background-color: $green;
+        font-family: none;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h5 {
+        margin-left: 16px;
+        color: $black;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+  }
+  &_panel {
+    display: none; // O'zgartirish
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+.accordion {
+  .row {
+    gap: 15px;
+  }
+}

@@ -20,3 +20,28 @@ window.addEventListener("resize", function () {
     document.body.style.overflow = "visible";
   }
 });
+
+// accordion
+document.addEventListener("DOMContentLoaded", function () {
+  var accButtons = document.querySelectorAll(".accordion_button");
+
+  accButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var isActive = this.classList.contains("active");
+      var panel = this.nextElementSibling;
+
+      // Barcha accordionlarni yopish
+      var allPanels = document.querySelectorAll(".accordion_panel");
+      allPanels.forEach(function (item) {
+        item.style.display = "none";
+        item.previousElementSibling.classList.remove("active");
+      });
+
+      // Faqat o'tgan accordionni ochish
+      if (!isActive) {
+        this.classList.add("active");
+        panel.style.display = "block";
+      }
+    });
+  });
+});

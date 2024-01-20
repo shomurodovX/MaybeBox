@@ -1,0 +1,21 @@
+.about {
+  padding-top: 120px;
+  &_title {
+    margin-bottom: 32px;
+  }
+  &_text {
+    p {
+      color: $black;
+      font-family: Cormorant;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  &_img {
+    img {
+      border-radius: 12px;
+    }
+  }
+}
